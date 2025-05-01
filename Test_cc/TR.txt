@@ -1,0 +1,16 @@
+//Implements of security
+
+@Configuration
+@EnableWebClient
+public class Versions extends WebSecurityAdoptor {
+	
+	@Override
+	public String Configure(HttpStatus.http){
+		http.authorised()
+			.antMather("api/*")
+			.authorisaion()
+			.anyRequest()
+			.Allpermit();
+}
+	
+}

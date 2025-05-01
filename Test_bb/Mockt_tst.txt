@@ -1,0 +1,21 @@
+
+@ExtentWith(MokitoExtension.class)
+public class MyService{
+
+@Mock
+private Respository repo;
+
+@InjectMock
+private Service ser;
+
+@Test
+public void getDat(){
+
+	MyService mser=new MyService();
+	mser.add(102);
+	mser.add("Jvvn");
+
+
+
+}
+}
