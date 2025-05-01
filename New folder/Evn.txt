@@ -1,0 +1,27 @@
+//print Even and Odd using wait() and notify() in multithreading
+public class Grips{
+	
+	Object lock=new Object();
+	Boolean[] isOdd=new Boolean[]{true};
+
+ComplitableFuture.runAsync(()->{
+	for(int i=2; i<=10; i=i+2){
+	synchronis(lock){
+	while(isOdd){
+	try{
+	 lock.wait();
+	}catch(IntrruptedExeption es){
+	Thread.currentThread.intrrupt();
+	}
+	
+	System.out.println("Even:-"+i);
+	isOdd=true;
+	lock.notify();
+}
+}
+}
+})
+
+
+	
+}
